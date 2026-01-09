@@ -323,7 +323,7 @@ export function generateOwnerPDF(shares: GeneratedShares): jsPDF {
   let y = 25;
 
   // Header
-  y = drawHeader(doc, y);
+  y = drawHeader(doc, y, 'en');
 
   doc.setFontSize(11);
   doc.setTextColor(COLORS.primary);
