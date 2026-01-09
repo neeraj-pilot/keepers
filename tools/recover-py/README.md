@@ -9,6 +9,35 @@ A standalone Python script to recover secrets from Keepers shares without needin
 
 ## Usage
 
+### Interactive Mode (recommended)
+
+Simply run the script and enter shares when prompted:
+
+```bash
+python recover.py
+```
+
+```
+Keepers Secret Recovery Tool
+========================================
+Enter your shares one at a time.
+Press Enter on an empty line when done.
+
+Share 1: 0302abc123def456...
+  Added share 1
+Share 2: 0301789abc012def...
+  Added share 2
+Share 3:
+========================================
+Recovered secret:
+
+your secret here
+```
+
+### Command Line Mode
+
+You can also pass shares as arguments:
+
 ```bash
 python recover.py <share1> <share2> [share3] ...
 ```

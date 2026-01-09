@@ -112,17 +112,53 @@ def combine_shares(shares: list[str]) -> str:
     return secret_bytes.decode('utf-8')
 
 def main():
-    if len(sys.argv) < 3:
-        print(__doc__)
+    # If shares provided as arguments, use them
+    if len(sys.argv) >= 3:
+        shares = sys.argv[1:]
+    else:
+        # Interactive mode
+        print("Keepers Secret Recovery Tool")
+        print("=" * 40)
+        print("Enter your shares one at a time.")
+        print("Press Enter on an empty line when done.")
+        print()
+
+        shares = []
+        while True:
+            prompt = f"Share {len(shares) + 1}: "
+            try:
+                share = input(prompt).strip()
+            except EOFError:
+                break
+
+            if not share:
+                if len(shares) >= 2:
+                    break
+                else:
+                    print(f"Need at least 2 shares. You have {len(shares)}.")
+                    continue
+
+            # Basic validation
+            if not all(c in '0123456789abcdefABCDEF' for c in share):
+                print("Invalid share format. Shares should be hex strings.")
+                continue
+
+            shares.append(share)
+            print(f"  Added share {len(shares)}")
+
+        print()
+
+    if len(shares) < 2:
         print("Error: Need at least 2 shares")
         sys.exit(1)
 
-    shares = sys.argv[1:]
-
     try:
         secret = combine_shares(shares)
+        print("=" * 40)
         print("Recovered secret:")
+        print()
         print(secret)
+        print()
     except ValueError as e:
         print(f"Error: {e}")
         sys.exit(1)
