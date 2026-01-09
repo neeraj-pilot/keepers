@@ -1,0 +1,252 @@
+{
+  "common": {
+    "appName": "Keepers",
+    "continue": "Continuer",
+    "back": "Retour",
+    "cancel": "Annuler",
+    "done": "Terminé",
+    "error": "Erreur",
+    "success": "Succès",
+    "loading": "Chargement...",
+    "copyToClipboard": "Copier dans le presse-papiers",
+    "copied": "Copié !",
+    "startOver": "Recommencer",
+    "download": "Télécharger",
+    "downloadAll": "Tout télécharger en ZIP",
+    "optional": "optionnel"
+  },
+  "home": {
+    "tagline": "Partagez vos secrets entre des personnes de confiance",
+    "subtitle": "Keepers utilise le partage de secret de Shamir pour diviser vos informations sensibles en morceaux. Aucune personne seule ne peut accéder à votre secret.",
+    "createNew": "Créer un nouveau secret",
+    "recoverExisting": "Récupérer un existant",
+    "features": {
+      "splitSecure": {
+        "title": "Diviser et sécuriser",
+        "description": "Votre secret est mathématiquement divisé en morceaux inutiles seuls"
+      },
+      "trustedCircle": {
+        "title": "Cercle de confiance",
+        "description": "Choisissez qui garde vos morceaux de secret et combien sont nécessaires"
+      },
+      "trulyPrivate": {
+        "title": "Vraiment privé",
+        "description": "Tout se passe dans votre navigateur. Rien n'est stocké nulle part"
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça marche",
+      "step1": {
+        "title": "Entrez votre secret",
+        "description": "Votre phrase de récupération crypto, clé maître du gestionnaire de mots de passe ou toute information sensible"
+      },
+      "step2": {
+        "title": "Ajoutez vos gardiens de confiance",
+        "description": "Membres de la famille, amis proches ou conseillers de confiance qui garderont chacun un morceau"
+      },
+      "step3": {
+        "title": "Générez et distribuez les PDFs",
+        "description": "Chaque gardien reçoit un document unique avec son morceau et les instructions de récupération"
+      }
+    },
+    "security": {
+      "title": "Garanties de sécurité",
+      "noServers": "Pas de serveurs, pas de bases de données, pas de comptes",
+      "openSource": "Open source et auditable",
+      "browserOnly": "Fonctionne entièrement hors ligne après chargement"
+    },
+    "footer": {
+      "privacy": "Vos secrets ne quittent jamais votre navigateur",
+      "madeWith": "Fait avec amour cryptographique"
+    }
+  },
+  "create": {
+    "steps": {
+      "aboutYou": "À propos de vous",
+      "secret": "Secret",
+      "keepers": "Gardiens",
+      "message": "Message",
+      "review": "Révision",
+      "download": "Télécharger",
+      "verify": "Vérifier"
+    },
+    "step1": {
+      "title": "À propos de vous",
+      "description": "Ces informations apparaîtront sur les documents de vos gardiens pour qu'ils sachent à qui appartient le secret.",
+      "nameLabel": "Votre nom",
+      "namePlaceholder": "ex., Jean Dupont",
+      "nameHelp": "Les gardiens verront ceci sur leur document",
+      "contactLabel": "Vos coordonnées (optionnel)",
+      "contactPlaceholder": "ex., jean@email.com, 01-23-45-67-89",
+      "contactHelp": "Pour que les gardiens puissent vous contacter pour une récupération de routine"
+    },
+    "step2": {
+      "title": "Votre secret",
+      "description": "Entrez le secret que vous souhaitez protéger. Il sera divisé entre vos gardiens.",
+      "typeLabel": "Quel type de secret est-ce ?",
+      "types": {
+        "cryptoWallet": "Phrase de récupération crypto",
+        "passwordManager": "Clé maître du gestionnaire de mots de passe",
+        "encryptionKey": "Clé de chiffrement",
+        "other": "Autre information sensible"
+      },
+      "secretLabel": "Votre secret",
+      "secretPlaceholder": "Entrez votre phrase de récupération, mot de passe maître ou autre secret...",
+      "secretHelp": "Ceci sera chiffré et divisé entre vos gardiens",
+      "show": "Afficher",
+      "hide": "Masquer",
+      "warning": "Assurez-vous d'être dans un endroit privé et que personne ne peut voir votre écran"
+    },
+    "step3": {
+      "title": "Vos gardiens",
+      "description": "Ce sont des personnes de confiance qui vous aideront à récupérer votre secret si quelque chose arrive.",
+      "keeperTitle": "Gardien {{number}}",
+      "nameLabel": "Nom",
+      "namePlaceholder": "ex., Maman, Frère, Meilleur ami",
+      "phoneLabel": "Téléphone",
+      "phonePlaceholder": "01-23-45-67-89",
+      "emailLabel": "Email",
+      "emailPlaceholder": "email@exemple.com",
+      "storageLabel": "Où allez-vous stocker leur copie ?",
+      "storagePlaceholder": "ex., Dans leur coffre-fort, Envoyé via Signal, Dans leur gestionnaire de mots de passe",
+      "storageHelp": "Cette note apparaît sur les PDFs des autres gardiens pour les aider à localiser le document si nécessaire.",
+      "addMore": "Ajouter plus de gardiens ({{current}} → {{next}})",
+      "thresholdLabel": "Combien de gardiens sont nécessaires pour récupérer ?",
+      "thresholdOption": "N'importe quels {{threshold}} sur {{total}}",
+      "recommended": "Recommandé",
+      "warningLowThreshold": "Moins sécurisé : une seule personne peut récupérer votre secret seule.",
+      "warningHighThreshold": "Risqué : si quelqu'un perd son document, la récupération devient impossible.",
+      "protectionInfo": "Protège contre {{count}} gardien(s) perdant leur document."
+    },
+    "step4": {
+      "title": "Message aux gardiens",
+      "description": "Écrivez un message personnel qui apparaîtra sur le document de chaque gardien.",
+      "messageLabel": "Votre message aux gardiens",
+      "messagePlaceholder": "Écrivez un message à vos gardiens expliquant à quoi cela sert et quand ils doivent l'utiliser...",
+      "useTemplate": "Utiliser le modèle suggéré",
+      "template": "Cher/Chère Gardien/ne,\n\nVous recevez ceci parce que je vous fais profondément confiance. Ce document contient un morceau de mon {{secretType}}.\n\nSi j'ai besoin de récupérer mon secret, je vous contacterai. S'il vous plaît, gardez ce document en sécurité et en privé.\n\nS'il m'arrive quelque chose et que d'autres ont besoin de récupérer mon secret, ils vous contacteront. Vous devrez partager votre morceau avec au moins {{threshold}} autre(s) gardien(s).\n\nMerci d'être quelqu'un en qui je peux avoir confiance.\n\n{{ownerName}}"
+    },
+    "step5": {
+      "title": "Révision et génération",
+      "description": "Vérifiez votre configuration avant de générer les documents des gardiens.",
+      "ownerSection": "Vos informations",
+      "secretSection": "Secret",
+      "secretType": "Type",
+      "secretLength": "{{count}} caractères",
+      "keepersSection": "Gardiens",
+      "recoverySection": "Configuration de récupération",
+      "recoveryDescription": "N'importe quels {{threshold}} gardiens sur {{total}} peuvent récupérer votre secret",
+      "generateButton": "Générer les documents"
+    },
+    "step6": {
+      "title": "Documents prêts",
+      "description": "Les documents de vos gardiens ont été générés. Téléchargez-les et distribuez-les en toute sécurité.",
+      "keeperDocument": "Document de {{name}}",
+      "downloadPDF": "Télécharger PDF",
+      "downloadAllZip": "Tout télécharger en ZIP",
+      "distributionTips": "Conseils de distribution",
+      "tip1": "Envoyez les documents par des canaux sécurisés (Signal, email chiffré)",
+      "tip2": "Pensez à imprimer et remettre des copies physiques",
+      "tip3": "Assurez-vous que les gardiens stockent leurs documents en sécurité",
+      "tip4": "Testez la récupération avant de vous fier à cette configuration"
+    },
+    "step7": {
+      "title": "Vérifiez votre configuration",
+      "description": "Testez que votre secret peut être récupéré en sélectionnant {{threshold}} morceaux de gardiens.",
+      "selectPieces": "Sélectionnez {{threshold}} morceaux pour tester la récupération :",
+      "pieceButton": "Morceau de {{name}}",
+      "testRecovery": "Tester la récupération",
+      "selectMore": "Sélectionnez {{count}} morceau(x) de plus",
+      "recoverySuccess": "Récupération réussie",
+      "recoverySuccessDesc": "Votre secret peut être récupéré avec {{count}} morceaux",
+      "recoveredSecret": "Le secret récupéré correspond !",
+      "setupComplete": "Configuration terminée",
+      "setupCompleteDesc": "Les documents de vos gardiens sont prêts. N'oubliez pas de les distribuer en toute sécurité.",
+      "keeperDocs": "Documents des gardiens",
+      "recoveryThreshold": "Seuil de récupération",
+      "securityReminder": "Rappel de sécurité",
+      "securityReminderDesc": "Votre secret n'est aussi sûr que les personnes qui le gardent. Choisissez vos gardiens avec soin et mettez à jour votre configuration si les circonstances changent."
+    }
+  },
+  "recover": {
+    "title": "Récupérer un secret",
+    "description": "Vous aurez besoin de morceaux de plusieurs gardiens. Consultez votre document de Gardien pour plus de détails.",
+    "collectedPieces": "Morceaux collectés :",
+    "piece": "Morceau",
+    "pieceNumber": "Morceau {{number}}",
+    "addFirstPiece": "Ajoutez votre premier morceau :",
+    "addAnotherPiece": "Ajoutez un autre morceau :",
+    "inputPlaceholder": "Collez ou tapez le code de votre document",
+    "or": "ou",
+    "scanQR": "Scanner le code QR",
+    "needMorePieces": "Besoin de {{count}} morceau(x) de plus",
+    "recoverSecret": "Récupérer le secret",
+    "errors": {
+      "duplicate": "Ce morceau a déjà été ajouté.",
+      "invalidFormat": "Format de morceau invalide. Veuillez vérifier et réessayer.",
+      "needAtLeast2": "Vous avez besoin d'au moins 2 morceaux pour récupérer.",
+      "recoveryFailed": "Impossible de récupérer le secret. Les morceaux peuvent ne pas correspondre ou être invalides.",
+      "piecesMismatch": "Ces morceaux ne semblent pas correspondre. Cela peut arriver si les morceaux ont été mal tapés ou proviennent de secrets différents."
+    },
+    "success": {
+      "title": "Secret récupéré !",
+      "description": "{{count}} morceaux combinés avec succès",
+      "warning": "Ce secret disparaîtra quand vous quitterez cette page. Assurez-vous de le copier et de le stocker en sécurité."
+    },
+    "help": "Besoin d'aide ? Consultez votre document de Gardien pour les instructions et les contacts des autres gardiens."
+  },
+  "qrScanner": {
+    "title": "Scanner le code QR",
+    "instruction": "Pointez votre caméra vers un code QR de Gardien",
+    "manualEntry": "Entrer le code manuellement",
+    "cameraError": "Impossible d'accéder à la caméra",
+    "cameraErrorDesc": "Veuillez autoriser l'accès à la caméra ou entrer le code manuellement."
+  },
+  "pdf": {
+    "title": "DOCUMENT DE GARDIEN",
+    "subtitle": "Document de Récupération de Secret",
+    "confidential": "CONFIDENTIEL",
+    "forKeeper": "Pour : {{name}}",
+    "createdBy": "Créé par : {{name}}",
+    "date": "Date : {{date}}",
+    "contactInfo": "Contact : {{contact}}",
+    "protects": "Ceci protège : {{type}}",
+    "accountName": "Compte/Service : {{name}}",
+    "serviceUrl": "URL du service : {{url}}",
+    "recoveryRequires": "Récupération nécessite : N'importe quels {{threshold}} sur {{total}} gardiens",
+    "whenToUse": "QUAND UTILISER CE DOCUMENT",
+    "whenToUseDesc": "Ce document contient votre morceau d'un secret. Vous pourriez avoir besoin de l'utiliser si :",
+    "useCase1": "Le propriétaire vous demande de l'aider à récupérer son secret",
+    "useCase2": "Quelque chose arrive au propriétaire et des personnes autorisées ont besoin d'accès",
+    "ifOwnerAsks": "Si {{name}} demande de l'aide :",
+    "ifOwnerAsksDesc": "Il/elle a peut-être perdu l'accès et a besoin de votre morceau. Lisez-lui le code ci-dessous ou aidez-le à l'entrer sur neeraj-pilot.github.io/keepers/recover",
+    "ifOwnerUnavailable": "Si {{name}} est indisponible ou décédé :",
+    "ifOwnerUnavailableDesc": "Contactez les autres gardiens listés ci-dessous. Ensemble (n'importe quels {{threshold}} d'entre vous) pouvez récupérer le secret pour leur famille.",
+    "messageSection": "MESSAGE DE {{name}}",
+    "yourPiece": "VOTRE MORCEAU DE SECRET",
+    "pieceInstruction": "C'est votre morceau unique. Gardez-le en sécurité et en privé.",
+    "scanOrType": "Scannez le code QR ou tapez ce code :",
+    "otherKeepers": "AUTRES GARDIENS",
+    "otherKeepersDesc": "Contactez ces personnes pour coordonner la récupération :",
+    "theirCopy": "Leur copie : {{location}}",
+    "storedAt": "Document stocké :",
+    "ownerContact": "CONTACT DU PROPRIÉTAIRE",
+    "howToRecover": "COMMENT RÉCUPÉRER",
+    "recoverStep1": "1. Allez sur neeraj-pilot.github.io/keepers/recover",
+    "recoverStep2": "2. Scannez ou tapez votre morceau (ci-dessus)",
+    "recoverStep3": "3. Demandez à un autre gardien d'ajouter son morceau",
+    "recoverStep4": "4. Le secret sera révélé",
+    "ifSiteUnavailable": "Si le site est indisponible :",
+    "ifSiteUnavailableDesc": "Ceci utilise le standard Shamir Secret Sharing. N'importe quel outil compatible peut combiner les morceaux.",
+    "footer": "Gardez ce document dans un endroit sûr. Ne le partagez pas sauf pour la récupération."
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}

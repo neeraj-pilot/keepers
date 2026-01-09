@@ -1,0 +1,252 @@
+{
+  "common": {
+    "appName": "Keepers",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "cancel": "Abbrechen",
+    "done": "Fertig",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "loading": "Laden...",
+    "copyToClipboard": "In Zwischenablage kopieren",
+    "copied": "Kopiert!",
+    "startOver": "Neu starten",
+    "download": "Herunterladen",
+    "downloadAll": "Alles als ZIP herunterladen",
+    "optional": "optional"
+  },
+  "home": {
+    "tagline": "Teilen Sie Ihre Geheimnisse mit vertrauenswürdigen Personen",
+    "subtitle": "Keepers verwendet Shamirs Geheimteilung, um Ihre sensiblen Informationen in Teile aufzuteilen. Keine einzelne Person kann allein auf Ihr Geheimnis zugreifen.",
+    "createNew": "Neues Geheimnis erstellen",
+    "recoverExisting": "Bestehendes wiederherstellen",
+    "features": {
+      "splitSecure": {
+        "title": "Teilen & Sichern",
+        "description": "Ihr Geheimnis wird mathematisch in Teile aufgeteilt, die einzeln nutzlos sind"
+      },
+      "trustedCircle": {
+        "title": "Vertrauenskreis",
+        "description": "Wählen Sie, wer Ihre Geheimnissteile hält und wie viele benötigt werden"
+      },
+      "trulyPrivate": {
+        "title": "Wirklich privat",
+        "description": "Alles geschieht in Ihrem Browser. Nichts wird irgendwo gespeichert"
+      }
+    },
+    "howItWorks": {
+      "title": "So funktioniert es",
+      "step1": {
+        "title": "Geben Sie Ihr Geheimnis ein",
+        "description": "Ihre Krypto-Wallet-Seed-Phrase, Master-Passwort oder andere sensible Informationen"
+      },
+      "step2": {
+        "title": "Fügen Sie Ihre vertrauenswürdigen Hüter hinzu",
+        "description": "Familienmitglieder, enge Freunde oder vertrauenswürdige Berater, die jeweils ein Teil halten"
+      },
+      "step3": {
+        "title": "PDFs generieren und verteilen",
+        "description": "Jeder Hüter erhält ein einzigartiges Dokument mit seinem Teil und Wiederherstellungsanweisungen"
+      }
+    },
+    "security": {
+      "title": "Sicherheitsgarantien",
+      "noServers": "Keine Server, keine Datenbanken, keine Konten",
+      "openSource": "Open Source und überprüfbar",
+      "browserOnly": "Funktioniert nach dem Laden vollständig offline"
+    },
+    "footer": {
+      "privacy": "Ihre Geheimnisse verlassen niemals Ihren Browser",
+      "madeWith": "Mit kryptographischer Liebe gemacht"
+    }
+  },
+  "create": {
+    "steps": {
+      "aboutYou": "Über Sie",
+      "secret": "Geheimnis",
+      "keepers": "Hüter",
+      "message": "Nachricht",
+      "review": "Überprüfung",
+      "download": "Download",
+      "verify": "Verifizieren"
+    },
+    "step1": {
+      "title": "Über Sie",
+      "description": "Diese Informationen erscheinen auf den Dokumenten Ihrer Hüter, damit sie wissen, wem das Geheimnis gehört.",
+      "nameLabel": "Ihr Name",
+      "namePlaceholder": "z.B., Max Mustermann",
+      "nameHelp": "Hüter sehen dies auf ihrem Dokument",
+      "contactLabel": "Ihre Kontaktdaten (optional)",
+      "contactPlaceholder": "z.B., max@email.de, 0123-456789",
+      "contactHelp": "Damit Hüter Sie für routinemäßige Wiederherstellung erreichen können"
+    },
+    "step2": {
+      "title": "Ihr Geheimnis",
+      "description": "Geben Sie das Geheimnis ein, das Sie schützen möchten. Es wird unter Ihren Hütern aufgeteilt.",
+      "typeLabel": "Welche Art von Geheimnis ist das?",
+      "types": {
+        "cryptoWallet": "Krypto-Wallet-Seed-Phrase",
+        "passwordManager": "Passwort-Manager-Master-Schlüssel",
+        "encryptionKey": "Verschlüsselungsschlüssel",
+        "other": "Andere sensible Informationen"
+      },
+      "secretLabel": "Ihr Geheimnis",
+      "secretPlaceholder": "Geben Sie Ihre Seed-Phrase, Master-Passwort oder anderes Geheimnis ein...",
+      "secretHelp": "Dies wird verschlüsselt und unter Ihren Hütern aufgeteilt",
+      "show": "Anzeigen",
+      "hide": "Verbergen",
+      "warning": "Stellen Sie sicher, dass Sie an einem privaten Ort sind und niemand Ihren Bildschirm sehen kann"
+    },
+    "step3": {
+      "title": "Ihre Hüter",
+      "description": "Dies sind vertrauenswürdige Personen, die Ihnen helfen, Ihr Geheimnis wiederherzustellen, falls etwas passiert.",
+      "keeperTitle": "Hüter {{number}}",
+      "nameLabel": "Name",
+      "namePlaceholder": "z.B., Mama, Bruder, Bester Freund",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "0123-456789",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "email@beispiel.de",
+      "storageLabel": "Wo werden Sie ihre Kopie aufbewahren?",
+      "storagePlaceholder": "z.B., In ihrem Safe, Über Signal gesendet, In ihrem Passwort-Manager",
+      "storageHelp": "Diese Notiz erscheint auf den PDFs anderer Hüter, um das Dokument bei Bedarf zu finden.",
+      "addMore": "Mehr Hüter hinzufügen ({{current}} → {{next}})",
+      "thresholdLabel": "Wie viele Hüter werden für die Wiederherstellung benötigt?",
+      "thresholdOption": "Beliebige {{threshold}} von {{total}}",
+      "recommended": "Empfohlen",
+      "warningLowThreshold": "Weniger sicher: Eine Person kann Ihr Geheimnis allein wiederherstellen.",
+      "warningHighThreshold": "Riskant: Wenn jemand sein Dokument verliert, wird die Wiederherstellung unmöglich.",
+      "protectionInfo": "Schützt vor {{count}} Hüter(n), die ihr Dokument verlieren."
+    },
+    "step4": {
+      "title": "Nachricht an die Hüter",
+      "description": "Schreiben Sie eine persönliche Nachricht, die auf dem Dokument jedes Hüters erscheint.",
+      "messageLabel": "Ihre Nachricht an die Hüter",
+      "messagePlaceholder": "Schreiben Sie eine Nachricht an Ihre Hüter, die erklärt, wofür das ist und wann sie es verwenden sollen...",
+      "useTemplate": "Vorgeschlagene Vorlage verwenden",
+      "template": "Liebe/r Hüter/in,\n\nSie erhalten dies, weil ich Ihnen zutiefst vertraue. Dieses Dokument enthält ein Teil meines {{secretType}}.\n\nWenn ich jemals mein Geheimnis wiederherstellen muss, werde ich Sie kontaktieren. Bitte bewahren Sie dieses Dokument sicher und privat auf.\n\nWenn mir etwas passiert und andere mein Geheimnis wiederherstellen müssen, werden sie Sie kontaktieren. Sie müssen Ihr Teil mit mindestens {{threshold}} anderen Hüter(n) teilen.\n\nDanke, dass Sie jemand sind, dem ich vertrauen kann.\n\n{{ownerName}}"
+    },
+    "step5": {
+      "title": "Überprüfen & Generieren",
+      "description": "Überprüfen Sie Ihre Einrichtung, bevor Sie die Hüterdokumente generieren.",
+      "ownerSection": "Ihre Informationen",
+      "secretSection": "Geheimnis",
+      "secretType": "Typ",
+      "secretLength": "{{count}} Zeichen",
+      "keepersSection": "Hüter",
+      "recoverySection": "Wiederherstellungs-Setup",
+      "recoveryDescription": "Beliebige {{threshold}} von {{total}} Hütern können Ihr Geheimnis wiederherstellen",
+      "generateButton": "Dokumente generieren"
+    },
+    "step6": {
+      "title": "Dokumente bereit",
+      "description": "Ihre Hüterdokumente wurden generiert. Laden Sie sie herunter und verteilen Sie sie sicher.",
+      "keeperDocument": "{{name}}s Dokument",
+      "downloadPDF": "PDF herunterladen",
+      "downloadAllZip": "Alles als ZIP herunterladen",
+      "distributionTips": "Verteilungstipps",
+      "tip1": "Senden Sie Dokumente über sichere Kanäle (Signal, verschlüsselte E-Mail)",
+      "tip2": "Erwägen Sie, physische Kopien auszudrucken und zu übergeben",
+      "tip3": "Stellen Sie sicher, dass Hüter ihre Dokumente sicher aufbewahren",
+      "tip4": "Testen Sie die Wiederherstellung, bevor Sie sich auf diese Einrichtung verlassen"
+    },
+    "step7": {
+      "title": "Überprüfen Sie Ihre Einrichtung",
+      "description": "Testen Sie, ob Ihr Geheimnis wiederhergestellt werden kann, indem Sie {{threshold}} Hüterteile auswählen.",
+      "selectPieces": "Wählen Sie {{threshold}} Teile, um die Wiederherstellung zu testen:",
+      "pieceButton": "{{name}}s Teil",
+      "testRecovery": "Wiederherstellung testen",
+      "selectMore": "Wählen Sie {{count}} weitere(s) Teil(e)",
+      "recoverySuccess": "Wiederherstellung erfolgreich",
+      "recoverySuccessDesc": "Ihr Geheimnis kann mit {{count}} Teilen wiederhergestellt werden",
+      "recoveredSecret": "Wiederhergestelltes Geheimnis stimmt überein!",
+      "setupComplete": "Einrichtung abgeschlossen",
+      "setupCompleteDesc": "Ihre Hüterdokumente sind bereit. Denken Sie daran, sie sicher zu verteilen.",
+      "keeperDocs": "Hüterdokumente",
+      "recoveryThreshold": "Wiederherstellungsschwelle",
+      "securityReminder": "Sicherheitserinnerung",
+      "securityReminderDesc": "Ihr Geheimnis ist nur so sicher wie die Personen, die es halten. Wählen Sie Hüter weise und aktualisieren Sie Ihre Einrichtung, wenn sich die Umstände ändern."
+    }
+  },
+  "recover": {
+    "title": "Ein Geheimnis wiederherstellen",
+    "description": "Sie benötigen Teile von mehreren Hütern. Überprüfen Sie Ihr Hüterdokument für Details.",
+    "collectedPieces": "Gesammelte Teile:",
+    "piece": "Teil",
+    "pieceNumber": "Teil {{number}}",
+    "addFirstPiece": "Fügen Sie Ihr erstes Teil hinzu:",
+    "addAnotherPiece": "Fügen Sie ein weiteres Teil hinzu:",
+    "inputPlaceholder": "Fügen Sie den Code aus Ihrem Dokument ein oder tippen Sie ihn ein",
+    "or": "oder",
+    "scanQR": "QR-Code scannen",
+    "needMorePieces": "Benötigen {{count}} weitere(s) Teil(e)",
+    "recoverSecret": "Geheimnis wiederherstellen",
+    "errors": {
+      "duplicate": "Dieses Teil wurde bereits hinzugefügt.",
+      "invalidFormat": "Ungültiges Teilformat. Bitte überprüfen und erneut versuchen.",
+      "needAtLeast2": "Sie benötigen mindestens 2 Teile zur Wiederherstellung.",
+      "recoveryFailed": "Geheimnis konnte nicht wiederhergestellt werden. Die Teile passen möglicherweise nicht zusammen oder sind ungültig.",
+      "piecesMismatch": "Diese Teile scheinen nicht zusammenzupassen. Dies kann passieren, wenn Teile falsch eingegeben wurden oder von verschiedenen Geheimnissen stammen."
+    },
+    "success": {
+      "title": "Geheimnis wiederhergestellt!",
+      "description": "{{count}} Teile erfolgreich kombiniert",
+      "warning": "Dieses Geheimnis verschwindet, wenn Sie diese Seite verlassen. Stellen Sie sicher, dass Sie es kopieren und sicher aufbewahren."
+    },
+    "help": "Brauchen Sie Hilfe? Überprüfen Sie Ihr Hüterdokument für Anweisungen und Kontakte anderer Hüter."
+  },
+  "qrScanner": {
+    "title": "QR-Code scannen",
+    "instruction": "Richten Sie Ihre Kamera auf einen Hüter-QR-Code",
+    "manualEntry": "Code manuell eingeben",
+    "cameraError": "Kamera konnte nicht aufgerufen werden",
+    "cameraErrorDesc": "Bitte erlauben Sie den Kamerazugriff oder geben Sie den Code manuell ein."
+  },
+  "pdf": {
+    "title": "HÜTERDOKUMENT",
+    "subtitle": "Geheimnis-Wiederherstellungsdokument",
+    "confidential": "VERTRAULICH",
+    "forKeeper": "Für: {{name}}",
+    "createdBy": "Erstellt von: {{name}}",
+    "date": "Datum: {{date}}",
+    "contactInfo": "Kontakt: {{contact}}",
+    "protects": "Dies schützt: {{type}}",
+    "accountName": "Konto/Dienst: {{name}}",
+    "serviceUrl": "Dienst-URL: {{url}}",
+    "recoveryRequires": "Wiederherstellung erfordert: Beliebige {{threshold}} von {{total}} Hütern",
+    "whenToUse": "WANN DIESES DOKUMENT VERWENDEN",
+    "whenToUseDesc": "Dieses Dokument enthält Ihr Teil eines Geheimnisses. Sie müssen es möglicherweise verwenden, wenn:",
+    "useCase1": "Der Eigentümer Sie bittet, bei der Wiederherstellung seines Geheimnisses zu helfen",
+    "useCase2": "Dem Eigentümer etwas passiert und autorisierte Parteien Zugang benötigen",
+    "ifOwnerAsks": "Wenn {{name}} um Hilfe bittet:",
+    "ifOwnerAsksDesc": "Er/sie hat möglicherweise den Zugang verloren und braucht Ihr Teil. Lesen Sie ihm/ihr den Code unten vor oder helfen Sie bei der Eingabe auf neeraj-pilot.github.io/keepers/recover",
+    "ifOwnerUnavailable": "Wenn {{name}} nicht verfügbar ist oder verstorben ist:",
+    "ifOwnerUnavailableDesc": "Kontaktieren Sie die anderen unten aufgeführten Hüter. Zusammen (beliebige {{threshold}} von Ihnen) können das Geheimnis für die Familie wiederherstellen.",
+    "messageSection": "NACHRICHT VON {{name}}",
+    "yourPiece": "IHR GEHEIMNIS-TEIL",
+    "pieceInstruction": "Dies ist Ihr einzigartiges Teil. Bewahren Sie es sicher und privat auf.",
+    "scanOrType": "Scannen Sie den QR-Code oder geben Sie diesen Code ein:",
+    "otherKeepers": "ANDERE HÜTER",
+    "otherKeepersDesc": "Kontaktieren Sie diese Personen, um die Wiederherstellung zu koordinieren:",
+    "theirCopy": "Ihre Kopie: {{location}}",
+    "storedAt": "Dokument aufbewahrt:",
+    "ownerContact": "KONTAKT DES EIGENTÜMERS",
+    "howToRecover": "WIE WIEDERHERSTELLEN",
+    "recoverStep1": "1. Gehen Sie zu neeraj-pilot.github.io/keepers/recover",
+    "recoverStep2": "2. Scannen oder tippen Sie Ihr Teil (oben)",
+    "recoverStep3": "3. Lassen Sie einen anderen Hüter sein Teil hinzufügen",
+    "recoverStep4": "4. Das Geheimnis wird enthüllt",
+    "ifSiteUnavailable": "Wenn die Seite nicht verfügbar ist:",
+    "ifSiteUnavailableDesc": "Dies verwendet Standard Shamir Secret Sharing. Jedes kompatible Tool kann die Teile kombinieren.",
+    "footer": "Bewahren Sie dieses Dokument an einem sicheren Ort auf. Teilen Sie es nur für Wiederherstellungszwecke."
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "common": {
+    "appName": "Keepers",
+    "continue": "Continue",
+    "back": "Back",
+    "cancel": "Cancel",
+    "done": "Done",
+    "error": "Error",
+    "success": "Success",
+    "loading": "Loading...",
+    "copyToClipboard": "Copy to Clipboard",
+    "copied": "Copied!",
+    "startOver": "Start Over",
+    "download": "Download",
+    "downloadAll": "Download All as ZIP",
+    "optional": "optional"
+  },
+  "home": {
+    "tagline": "Split your secrets among people you trust",
+    "subtitle": "Keepers uses Shamir's Secret Sharing to split your sensitive information into pieces. No single person can access your secret alone.",
+    "createNew": "Create New Secret",
+    "recoverExisting": "Recover Existing",
+    "features": {
+      "splitSecure": {
+        "title": "Split & Secure",
+        "description": "Your secret is mathematically split into pieces that are useless alone"
+      },
+      "trustedCircle": {
+        "title": "Trusted Circle",
+        "description": "Choose who holds your secret pieces and how many are needed"
+      },
+      "trulyPrivate": {
+        "title": "Truly Private",
+        "description": "Everything happens in your browser. Nothing is stored anywhere"
+      }
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "step1": {
+        "title": "Enter your secret",
+        "description": "Your crypto wallet seed phrase, password manager master key, or any sensitive information"
+      },
+      "step2": {
+        "title": "Add your trusted keepers",
+        "description": "Family members, close friends, or trusted advisors who will each hold a piece"
+      },
+      "step3": {
+        "title": "Generate & distribute PDFs",
+        "description": "Each keeper gets a unique document with their piece and recovery instructions"
+      }
+    },
+    "security": {
+      "title": "Security guarantees",
+      "noServers": "No servers, no databases, no accounts",
+      "openSource": "Open source & auditable",
+      "browserOnly": "Works entirely offline after loading"
+    },
+    "footer": {
+      "privacy": "Your secrets never leave your browser",
+      "madeWith": "Made with cryptographic love"
+    }
+  },
+  "create": {
+    "steps": {
+      "aboutYou": "About You",
+      "secret": "Secret",
+      "keepers": "Keepers",
+      "message": "Message",
+      "review": "Review",
+      "download": "Download",
+      "verify": "Verify"
+    },
+    "step1": {
+      "title": "About You",
+      "description": "This information will appear on your keepers' documents so they know who the secret belongs to.",
+      "nameLabel": "Your name",
+      "namePlaceholder": "e.g., John Smith",
+      "nameHelp": "Keepers will see this on their document",
+      "contactLabel": "Your contact info (optional)",
+      "contactPlaceholder": "e.g., john@email.com, 555-1234",
+      "contactHelp": "So keepers can reach you for routine recovery"
+    },
+    "step2": {
+      "title": "Your Secret",
+      "description": "Enter the secret you want to protect. This will be split among your keepers.",
+      "typeLabel": "What type of secret is this?",
+      "types": {
+        "enteRecovery": "Ente.io Recovery Key",
+        "cryptoWallet": "Crypto wallet seed phrase",
+        "passwordManager": "Password manager master key",
+        "other": "Other (specify)"
+      },
+      "customTypeLabel": "What type of secret is this?",
+      "customTypePlaceholder": "e.g., Bank account details, API keys, etc.",
+      "accountIdLabel": "Account ID / Username (optional)",
+      "accountIdPlaceholder": "e.g., user@email.com, wallet address",
+      "accountIdTooltip": "Enter your account identifier to help locate your account during recovery. This could be an email, username, or wallet address depending on the service.",
+      "serviceWebsiteLabel": "Service Website (optional)",
+      "serviceWebsitePlaceholder": "e.g., https://ente.io",
+      "verifyBip39": "Verify BIP39 Words",
+      "verifyBip39Tooltip": "Check if your recovery phrase uses valid BIP39 words. This helps catch typos but does NOT validate the phrase itself. Note: Not all services use BIP39 word lists for their recovery keys.",
+      "validationSuccess": "All words are valid BIP39 words",
+      "validationError": "Invalid words found: {{words}}",
+      "validationEmpty": "Enter your recovery phrase first",
+      "secretLabel": "Your secret",
+      "secretPlaceholder": "Enter your seed phrase, master password, or other secret...",
+      "secretHelp": "This will be encrypted and split among your keepers",
+      "show": "Show",
+      "hide": "Hide",
+      "warning": "Make sure you're in a private location and no one can see your screen"
+    },
+    "step3": {
+      "title": "Your Keepers",
+      "description": "These are people you trust to help recover your secret if something happens.",
+      "keeperTitle": "Keeper {{number}}",
+      "nameLabel": "Name",
+      "namePlaceholder": "e.g., Mom, Brother, Best Friend",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "555-1234",
+      "emailLabel": "Email",
+      "emailPlaceholder": "email@example.com",
+      "storageLabel": "Where will you store / send their copy?",
+      "storagePlaceholder": "e.g., In their safe, Sent via Signal, In their password manager",
+      "storageHelp": "This note appears on other keepers' PDFs so they can help locate it if needed.",
+      "websiteLabel": "Website (optional)",
+      "websitePlaceholder": "e.g., https://example.com",
+      "languageLabel": "PDF Language",
+      "languageHelp": "Language for their PDF document. Non-English PDFs include an English copy.",
+      "addMore": "Add More Keepers ({{current}} → {{next}})",
+      "keeperCountLabel": "Number of keepers",
+      "keepersChip": "keepers",
+      "thresholdLabel": "How many keepers needed to recover?",
+      "thresholdOption": "Any {{threshold}} of {{total}}",
+      "recommended": "Recommended",
+      "warningLowThreshold": "Less secure: one person can recover your secret alone.",
+      "warningHighThreshold": "Risky: if anyone loses their document, recovery becomes impossible.",
+      "protectionInfo": "Protects against {{count}} keeper(s) losing their document."
+    },
+    "step4": {
+      "title": "Message to Keepers",
+      "description": "This message appears on everyone's document. Explain what this is for and when to use it.",
+      "messageLabel": "Your message",
+      "messagePlaceholder": "Write a message to your keepers...",
+      "useTemplate": "Use suggested template",
+      "templateDescription": "A template explaining when keepers should help and what to do in different situations.",
+      "template": "Dear Keeper,\n\nYou're receiving this because I trust you deeply. This document contains a piece of my {{secretType}}.\n\nIf I ever need to recover my secret, I'll reach out to you. Please keep this document safe and private.\n\nIf something happens to me and others need to recover my secret, they'll contact you. You'll need to share your piece with at least {{threshold}} other keeper(s).\n\nThank you for being someone I can trust.\n\n{{ownerName}}",
+      "suggestedTopics": "Suggested topics to cover:",
+      "topic1": "What this secret protects",
+      "topic2": "When they should help vs. refuse",
+      "topic3": "Who in your family should benefit",
+      "topic4": "Any special instructions"
+    },
+    "step5": {
+      "title": "Review & Generate",
+      "description": "Review your setup before generating keeper documents.",
+      "summary": "Summary",
+      "secretFor": "Secret for",
+      "recoveryRequires": "Recovery requires",
+      "owner": "Owner",
+      "noContactInfo": "No contact info",
+      "afterGenerating": "After generating:",
+      "warning1": "Your secret will be split and cleared from memory",
+      "warning2": "Download and distribute the PDFs carefully",
+      "warning3": "Consider printing and deleting digital copies",
+      "ownerSection": "Your Information",
+      "secretSection": "Secret",
+      "secretType": "Type",
+      "secretLength": "{{count}} characters",
+      "keepersSection": "Keepers",
+      "recoverySection": "Recovery Setup",
+      "recoveryDescription": "Any {{threshold}} of {{total}} keepers can recover your secret",
+      "generateButton": "Generate Documents"
+    },
+    "step6": {
+      "title": "Documents Ready",
+      "description": "Your secret has been split. Download each keeper's document and share it with them securely.",
+      "generating": "Generating documents...",
+      "keeperDocument": "{{name}}'s Document",
+      "share": "Share",
+      "downloaded": "Downloaded",
+      "referenceCopy": "Your Reference Copy",
+      "referenceCopyDesc": "Contains all keeper contacts (no secret piece)",
+      "secretCleared": "Secret cleared from memory. Refresh this page to start over.",
+      "downloadPDF": "Download PDF",
+      "downloadAllZip": "Download All as ZIP",
+      "distributionTips": "Distribution Tips",
+      "tip1": "Send documents through secure channels (Signal, encrypted email)",
+      "tip2": "Consider printing and handing physical copies",
+      "tip3": "Make sure keepers store their documents safely",
+      "tip4": "Test recovery before relying on this setup"
+    },
+    "step7": {
+      "title": "Verify Your Setup",
+      "description": "Test that your secret can be recovered by combining pieces. Select any {{threshold}} pieces to verify.",
+      "noShares": "No shares generated.",
+      "selectPiecesLabel": "Select pieces to combine",
+      "required": "required",
+      "selectPieces": "Select {{threshold}} pieces to test recovery:",
+      "pieceButton": "{{name}}'s piece",
+      "testRecovery": "Test Recovery",
+      "selectMore": "Select {{count}} more piece(s)",
+      "recoverySuccess": "Recovery Successful!",
+      "recoverySuccessDesc": "Your secret was successfully recovered by combining {{count}} pieces. Your setup is working correctly.",
+      "recoveredSecretPreview": "Recovered secret (first 20 chars):",
+      "recoveryFailed": "Recovery Failed",
+      "recoveryFailedDesc": "The recovered secret doesn't match the original. This shouldn't happen with valid shares. Please try again or regenerate your documents.",
+      "testDifferent": "Test different combinations",
+      "testDifferentDesc": "Try selecting different sets of {{threshold}} keepers to verify that any valid combination works. This ensures your setup is resilient.",
+      "recoveredSecret": "Recovered secret matches!",
+      "setupComplete": "Setup Complete",
+      "setupCompleteDesc": "Your keeper documents are ready. Remember to distribute them securely.",
+      "keeperDocs": "Keeper documents",
+      "recoveryThreshold": "Recovery threshold",
+      "securityReminder": "Security Reminder",
+      "securityReminderDesc": "Your secret is only as safe as the people who hold it. Choose keepers wisely and update your setup if circumstances change."
+    }
+  },
+  "recover": {
+    "title": "Recover a Secret",
+    "description": "You'll need pieces from multiple keepers. Check your Keeper document for details.",
+    "collectedPieces": "Collected pieces:",
+    "piece": "Piece",
+    "pieceNumber": "Piece {{number}}",
+    "addFirstPiece": "Add your first piece:",
+    "addAnotherPiece": "Add another piece:",
+    "inputPlaceholder": "Paste or type the code from your document",
+    "or": "or",
+    "scanQR": "Scan QR Code",
+    "needMorePieces": "Need {{count}} more piece(s)",
+    "recoverSecret": "Recover Secret",
+    "errors": {
+      "duplicate": "This piece has already been added.",
+      "invalidFormat": "Invalid piece format. Please check and try again.",
+      "needAtLeast2": "You need at least 2 pieces to recover.",
+      "recoveryFailed": "Could not recover the secret. The pieces may not match or may be invalid.",
+      "piecesMismatch": "These pieces don't seem to match. This can happen if pieces were typed incorrectly or are from different secrets."
+    },
+    "success": {
+      "title": "Secret Recovered!",
+      "description": "{{count}} pieces combined successfully",
+      "warning": "This secret will disappear when you leave this page. Make sure to copy and store it safely."
+    },
+    "help": "Need help? Check your Keeper document for instructions and other keeper contacts."
+  },
+  "qrScanner": {
+    "title": "Scan QR Code",
+    "instruction": "Point your camera at the QR code on the keeper document",
+    "manualEntry": "Enter Code Manually",
+    "starting": "Starting camera...",
+    "cameraError": "Could not access camera. Please check permissions or enter manually.",
+    "cameraErrorDesc": "Please allow camera access or enter the code manually."
+  },
+  "pdf": {
+    "title": "KEEPER DOCUMENT",
+    "subtitle": "Secret Recovery Document",
+    "confidential": "CONFIDENTIAL",
+    "forKeeper": "For: {{name}}",
+    "createdBy": "Created by: {{name}}",
+    "date": "Date: {{date}}",
+    "contactInfo": "Contact: {{contact}}",
+    "protects": "This protects: {{type}}",
+    "accountName": "Account/Service: {{name}}",
+    "serviceUrl": "Service URL: {{url}}",
+    "recoveryRequires": "Recovery requires: Any {{threshold}} of {{total}} keepers",
+    "whenToUse": "WHEN TO USE THIS DOCUMENT",
+    "whenToUseDesc": "This document contains your piece of a secret. You may need to use it if:",
+    "useCase1": "The owner asks you to help recover their secret",
+    "useCase2": "Something happens to the owner and authorized parties need access",
+    "ifOwnerAsks": "If {{name}} asks for help:",
+    "ifOwnerAsksDesc": "They may have lost access and needs your piece. Read them the code below or help enter it at neeraj-pilot.github.io/keepers/recover",
+    "ifOwnerUnavailable": "If {{name}} is unavailable or has passed:",
+    "ifOwnerUnavailableDesc": "Contact the other keepers listed below. Together (any {{threshold}} of you) can recover the secret for their family.",
+    "messageSection": "MESSAGE FROM {{name}}",
+    "yourPiece": "YOUR SECRET PIECE",
+    "pieceInstruction": "This is your unique piece. Keep it safe and private.",
+    "scanOrType": "Scan the QR code or type this code:",
+    "otherKeepers": "OTHER KEEPERS",
+    "otherKeepersDesc": "Contact these people to coordinate recovery:",
+    "theirCopy": "Their copy: {{location}}",
+    "storedAt": "Document stored:",
+    "ownerContact": "OWNER CONTACT",
+    "howToRecover": "HOW TO RECOVER",
+    "recoverStep1": "1. Go to neeraj-pilot.github.io/keepers/recover",
+    "recoverStep2": "2. Scan or type your piece (above)",
+    "recoverStep3": "3. Have another keeper add their piece",
+    "recoverStep4": "4. The secret will be revealed",
+    "ifSiteUnavailable": "If the site is unavailable:",
+    "ifSiteUnavailableDesc": "This uses standard Shamir Secret Sharing. Any compatible tool can combine the pieces.",
+    "footer": "Keep this document in a safe place. Do not share it except for recovery purposes."
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}

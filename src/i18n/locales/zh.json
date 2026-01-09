@@ -1,0 +1,252 @@
+{
+  "common": {
+    "appName": "Keepers",
+    "continue": "继续",
+    "back": "返回",
+    "cancel": "取消",
+    "done": "完成",
+    "error": "错误",
+    "success": "成功",
+    "loading": "加载中...",
+    "copyToClipboard": "复制到剪贴板",
+    "copied": "已复制！",
+    "startOver": "重新开始",
+    "download": "下载",
+    "downloadAll": "全部下载为ZIP",
+    "optional": "可选"
+  },
+  "home": {
+    "tagline": "在您信任的人之间分割您的秘密",
+    "subtitle": "Keepers使用Shamir秘密分享将您的敏感信息分割成碎片。单独一个人无法访问您的秘密。",
+    "createNew": "创建新秘密",
+    "recoverExisting": "恢复现有秘密",
+    "features": {
+      "splitSecure": {
+        "title": "分割和保护",
+        "description": "您的秘密被数学分割成单独无用的碎片"
+      },
+      "trustedCircle": {
+        "title": "信任圈",
+        "description": "选择谁持有您的秘密碎片以及需要多少个"
+      },
+      "trulyPrivate": {
+        "title": "真正私密",
+        "description": "一切都在您的浏览器中进行。没有任何东西存储在任何地方"
+      }
+    },
+    "howItWorks": {
+      "title": "工作原理",
+      "step1": {
+        "title": "输入您的秘密",
+        "description": "您的加密钱包种子短语、密码管理器主密钥或任何敏感信息"
+      },
+      "step2": {
+        "title": "添加您信任的守护者",
+        "description": "家庭成员、亲密朋友或值得信赖的顾问，每人持有一个碎片"
+      },
+      "step3": {
+        "title": "生成并分发PDF",
+        "description": "每个守护者都会收到一份独特的文档，包含他们的碎片和恢复说明"
+      }
+    },
+    "security": {
+      "title": "安全保证",
+      "noServers": "没有服务器、没有数据库、没有账户",
+      "openSource": "开源且可审计",
+      "browserOnly": "加载后完全离线工作"
+    },
+    "footer": {
+      "privacy": "您的秘密永远不会离开您的浏览器",
+      "madeWith": "用密码学的爱制作"
+    }
+  },
+  "create": {
+    "steps": {
+      "aboutYou": "关于您",
+      "secret": "秘密",
+      "keepers": "守护者",
+      "message": "消息",
+      "review": "审核",
+      "download": "下载",
+      "verify": "验证"
+    },
+    "step1": {
+      "title": "关于您",
+      "description": "此信息将显示在守护者的文档上，以便他们知道秘密属于谁。",
+      "nameLabel": "您的姓名",
+      "namePlaceholder": "例如：张三",
+      "nameHelp": "守护者将在他们的文档上看到这个",
+      "contactLabel": "您的联系方式（可选）",
+      "contactPlaceholder": "例如：zhangsan@email.com, 138-1234-5678",
+      "contactHelp": "以便守护者可以联系您进行常规恢复"
+    },
+    "step2": {
+      "title": "您的秘密",
+      "description": "输入您想要保护的秘密。它将在您的守护者之间分割。",
+      "typeLabel": "这是什么类型的秘密？",
+      "types": {
+        "cryptoWallet": "加密钱包种子短语",
+        "passwordManager": "密码管理器主密钥",
+        "encryptionKey": "加密密钥",
+        "other": "其他敏感信息"
+      },
+      "secretLabel": "您的秘密",
+      "secretPlaceholder": "输入您的种子短语、主密码或其他秘密...",
+      "secretHelp": "这将被加密并在您的守护者之间分割",
+      "show": "显示",
+      "hide": "隐藏",
+      "warning": "请确保您在私密的地方，没有人能看到您的屏幕"
+    },
+    "step3": {
+      "title": "您的守护者",
+      "description": "这些是您信任的人，如果发生什么事，他们会帮助恢复您的秘密。",
+      "keeperTitle": "守护者 {{number}}",
+      "nameLabel": "姓名",
+      "namePlaceholder": "例如：妈妈、哥哥、最好的朋友",
+      "phoneLabel": "电话",
+      "phonePlaceholder": "138-1234-5678",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "email@example.com",
+      "storageLabel": "您将在哪里存放他们的副本？",
+      "storagePlaceholder": "例如：在他们的保险箱里、通过Signal发送、在他们的密码管理器中",
+      "storageHelp": "此备注将显示在其他守护者的PDF上，以便在需要时帮助找到文档。",
+      "addMore": "添加更多守护者（{{current}} → {{next}}）",
+      "thresholdLabel": "恢复需要多少个守护者？",
+      "thresholdOption": "{{total}}个中任意{{threshold}}个",
+      "recommended": "推荐",
+      "warningLowThreshold": "安全性较低：一个人可以单独恢复您的秘密。",
+      "warningHighThreshold": "有风险：如果任何人丢失他们的文档，恢复将变得不可能。",
+      "protectionInfo": "可防止{{count}}个守护者丢失文档。"
+    },
+    "step4": {
+      "title": "给守护者的消息",
+      "description": "写一条个人消息，它将显示在每个守护者的文档上。",
+      "messageLabel": "给守护者的消息",
+      "messagePlaceholder": "给您的守护者写一条消息，解释这是什么以及他们何时应该使用...",
+      "useTemplate": "使用建议模板",
+      "template": "亲爱的守护者：\n\n您收到这份文档是因为我深深信任您。此文档包含我的{{secretType}}的一部分。\n\n如果我需要恢复我的秘密，我会联系您。请安全且私密地保管此文档。\n\n如果我发生了什么事，其他人需要恢复我的秘密，他们会联系您。您需要与至少{{threshold}}个其他守护者分享您的碎片。\n\n感谢您成为我可以信任的人。\n\n{{ownerName}}"
+    },
+    "step5": {
+      "title": "审核并生成",
+      "description": "在生成守护者文档之前审核您的设置。",
+      "ownerSection": "您的信息",
+      "secretSection": "秘密",
+      "secretType": "类型",
+      "secretLength": "{{count}}个字符",
+      "keepersSection": "守护者",
+      "recoverySection": "恢复设置",
+      "recoveryDescription": "{{total}}个守护者中任意{{threshold}}个可以恢复您的秘密",
+      "generateButton": "生成文档"
+    },
+    "step6": {
+      "title": "文档准备就绪",
+      "description": "您的守护者文档已生成。请下载并安全分发。",
+      "keeperDocument": "{{name}}的文档",
+      "downloadPDF": "下载PDF",
+      "downloadAllZip": "全部下载为ZIP",
+      "distributionTips": "分发提示",
+      "tip1": "通过安全渠道发送文档（Signal、加密邮件）",
+      "tip2": "考虑打印并亲自递交实体副本",
+      "tip3": "确保守护者安全存放他们的文档",
+      "tip4": "在依赖此设置之前测试恢复"
+    },
+    "step7": {
+      "title": "验证您的设置",
+      "description": "通过选择{{threshold}}个守护者碎片来测试您的秘密是否可以恢复。",
+      "selectPieces": "选择{{threshold}}个碎片来测试恢复：",
+      "pieceButton": "{{name}}的碎片",
+      "testRecovery": "测试恢复",
+      "selectMore": "再选择{{count}}个碎片",
+      "recoverySuccess": "恢复成功",
+      "recoverySuccessDesc": "您的秘密可以用{{count}}个碎片恢复",
+      "recoveredSecret": "恢复的秘密匹配！",
+      "setupComplete": "设置完成",
+      "setupCompleteDesc": "您的守护者文档已准备就绪。请记得安全分发。",
+      "keeperDocs": "守护者文档",
+      "recoveryThreshold": "恢复阈值",
+      "securityReminder": "安全提醒",
+      "securityReminderDesc": "您的秘密只有保管它的人那么安全。明智地选择守护者，如果情况发生变化，请更新您的设置。"
+    }
+  },
+  "recover": {
+    "title": "恢复秘密",
+    "description": "您需要来自多个守护者的碎片。查看您的守护者文档了解详情。",
+    "collectedPieces": "已收集的碎片：",
+    "piece": "碎片",
+    "pieceNumber": "碎片 {{number}}",
+    "addFirstPiece": "添加您的第一个碎片：",
+    "addAnotherPiece": "添加另一个碎片：",
+    "inputPlaceholder": "粘贴或输入文档中的代码",
+    "or": "或",
+    "scanQR": "扫描二维码",
+    "needMorePieces": "还需要{{count}}个碎片",
+    "recoverSecret": "恢复秘密",
+    "errors": {
+      "duplicate": "此碎片已被添加。",
+      "invalidFormat": "碎片格式无效。请检查并重试。",
+      "needAtLeast2": "恢复需要至少2个碎片。",
+      "recoveryFailed": "无法恢复秘密。碎片可能不匹配或无效。",
+      "piecesMismatch": "这些碎片似乎不匹配。这可能是因为碎片输入错误或来自不同的秘密。"
+    },
+    "success": {
+      "title": "秘密已恢复！",
+      "description": "{{count}}个碎片成功组合",
+      "warning": "当您离开此页面时，秘密将消失。请确保复制并安全存储。"
+    },
+    "help": "需要帮助？查看您的守护者文档获取说明和其他守护者的联系方式。"
+  },
+  "qrScanner": {
+    "title": "扫描二维码",
+    "instruction": "将相机对准守护者二维码",
+    "manualEntry": "手动输入代码",
+    "cameraError": "无法访问相机",
+    "cameraErrorDesc": "请允许相机访问或手动输入代码。"
+  },
+  "pdf": {
+    "title": "守护者文档",
+    "subtitle": "秘密恢复文档",
+    "confidential": "机密",
+    "forKeeper": "致：{{name}}",
+    "createdBy": "创建者：{{name}}",
+    "date": "日期：{{date}}",
+    "contactInfo": "联系方式：{{contact}}",
+    "protects": "此文档保护：{{type}}",
+    "accountName": "账户/服务：{{name}}",
+    "serviceUrl": "服务网址：{{url}}",
+    "recoveryRequires": "恢复需要：{{total}}个守护者中任意{{threshold}}个",
+    "whenToUse": "何时使用此文档",
+    "whenToUseDesc": "此文档包含秘密的碎片。您可能需要在以下情况使用：",
+    "useCase1": "所有者请求您帮助恢复他们的秘密",
+    "useCase2": "所有者发生意外，授权方需要访问",
+    "ifOwnerAsks": "如果{{name}}请求帮助：",
+    "ifOwnerAsksDesc": "他/她可能失去了访问权限，需要您的碎片。请向他/她朗读下面的代码，或帮助在neeraj-pilot.github.io/keepers/recover上输入",
+    "ifOwnerUnavailable": "如果{{name}}无法联系或已去世：",
+    "ifOwnerUnavailableDesc": "联系下面列出的其他守护者。一起（你们中的任意{{threshold}}个人）可以为家人恢复秘密。",
+    "messageSection": "来自{{name}}的消息",
+    "yourPiece": "您的秘密碎片",
+    "pieceInstruction": "这是您独特的碎片。请安全且私密地保管。",
+    "scanOrType": "输入此代码：",
+    "otherKeepers": "其他守护者",
+    "otherKeepersDesc": "联系这些人协调恢复：",
+    "theirCopy": "他们的副本：{{location}}",
+    "storedAt": "文档存放：",
+    "ownerContact": "所有者联系方式",
+    "howToRecover": "如何恢复",
+    "recoverStep1": "1. 访问 neeraj-pilot.github.io/keepers/recover",
+    "recoverStep2": "2. 扫描或输入您的碎片（上方）",
+    "recoverStep3": "3. 让另一个守护者添加他们的碎片",
+    "recoverStep4": "4. 秘密将被揭示",
+    "ifSiteUnavailable": "如果网站无法访问：",
+    "ifSiteUnavailableDesc": "这使用标准的Shamir秘密分享。任何兼容的工具都可以组合碎片。",
+    "footer": "请将此文档保存在安全的地方。除恢复目的外请勿分享。"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}

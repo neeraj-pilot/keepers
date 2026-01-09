@@ -1,0 +1,252 @@
+{
+  "common": {
+    "appName": "Keepers",
+    "continue": "続ける",
+    "back": "戻る",
+    "cancel": "キャンセル",
+    "done": "完了",
+    "error": "エラー",
+    "success": "成功",
+    "loading": "読み込み中...",
+    "copyToClipboard": "クリップボードにコピー",
+    "copied": "コピーしました！",
+    "startOver": "最初からやり直す",
+    "download": "ダウンロード",
+    "downloadAll": "すべてをZIPでダウンロード",
+    "optional": "任意"
+  },
+  "home": {
+    "tagline": "信頼できる人々と秘密を分割",
+    "subtitle": "Keepersはシャミアの秘密分散法を使用して、機密情報を断片に分割します。一人の人間だけでは秘密にアクセスできません。",
+    "createNew": "新しい秘密を作成",
+    "recoverExisting": "既存を復元",
+    "features": {
+      "splitSecure": {
+        "title": "分割して保護",
+        "description": "秘密は数学的に分割され、単独では役に立たない断片になります"
+      },
+      "trustedCircle": {
+        "title": "信頼の輪",
+        "description": "誰が秘密の断片を持ち、いくつ必要かを選択"
+      },
+      "trulyPrivate": {
+        "title": "完全にプライベート",
+        "description": "すべてはブラウザ内で行われます。どこにも保存されません"
+      }
+    },
+    "howItWorks": {
+      "title": "使い方",
+      "step1": {
+        "title": "秘密を入力",
+        "description": "暗号ウォレットのシードフレーズ、パスワードマネージャーのマスターキー、またはその他の機密情報"
+      },
+      "step2": {
+        "title": "信頼できる守護者を追加",
+        "description": "家族、親しい友人、または信頼できるアドバイザーがそれぞれ断片を保持"
+      },
+      "step3": {
+        "title": "PDFを生成して配布",
+        "description": "各守護者は自分の断片と復元手順が記載された固有のドキュメントを受け取ります"
+      }
+    },
+    "security": {
+      "title": "セキュリティ保証",
+      "noServers": "サーバーなし、データベースなし、アカウントなし",
+      "openSource": "オープンソースで監査可能",
+      "browserOnly": "読み込み後は完全にオフラインで動作"
+    },
+    "footer": {
+      "privacy": "あなたの秘密はブラウザから出ません",
+      "madeWith": "暗号学的な愛を込めて"
+    }
+  },
+  "create": {
+    "steps": {
+      "aboutYou": "あなたについて",
+      "secret": "秘密",
+      "keepers": "守護者",
+      "message": "メッセージ",
+      "review": "確認",
+      "download": "ダウンロード",
+      "verify": "検証"
+    },
+    "step1": {
+      "title": "あなたについて",
+      "description": "この情報は守護者のドキュメントに表示され、秘密の所有者が誰かを示します。",
+      "nameLabel": "お名前",
+      "namePlaceholder": "例：山田太郎",
+      "nameHelp": "守護者がドキュメントでこれを見ます",
+      "contactLabel": "連絡先情報（任意）",
+      "contactPlaceholder": "例：taro@email.com、090-1234-5678",
+      "contactHelp": "守護者が通常の復元のために連絡できるように"
+    },
+    "step2": {
+      "title": "あなたの秘密",
+      "description": "保護したい秘密を入力してください。守護者の間で分割されます。",
+      "typeLabel": "これはどのような種類の秘密ですか？",
+      "types": {
+        "cryptoWallet": "暗号ウォレットのシードフレーズ",
+        "passwordManager": "パスワードマネージャーのマスターキー",
+        "encryptionKey": "暗号化キー",
+        "other": "その他の機密情報"
+      },
+      "secretLabel": "あなたの秘密",
+      "secretPlaceholder": "シードフレーズ、マスターパスワード、またはその他の秘密を入力...",
+      "secretHelp": "これは暗号化され、守護者の間で分割されます",
+      "show": "表示",
+      "hide": "非表示",
+      "warning": "プライベートな場所にいて、誰も画面を見ていないことを確認してください"
+    },
+    "step3": {
+      "title": "あなたの守護者",
+      "description": "これらは何かあった場合に秘密の復元を手伝ってくれる信頼できる人々です。",
+      "keeperTitle": "守護者 {{number}}",
+      "nameLabel": "名前",
+      "namePlaceholder": "例：母、兄、親友",
+      "phoneLabel": "電話番号",
+      "phonePlaceholder": "090-1234-5678",
+      "emailLabel": "メール",
+      "emailPlaceholder": "email@example.com",
+      "storageLabel": "彼らのコピーをどこに保管しますか？",
+      "storagePlaceholder": "例：金庫に、Signalで送信、パスワードマネージャーに",
+      "storageHelp": "このメモは他の守護者のPDFに表示され、必要に応じてドキュメントを見つけるのに役立ちます。",
+      "addMore": "守護者を追加（{{current}} → {{next}}）",
+      "thresholdLabel": "復元に必要な守護者の数は？",
+      "thresholdOption": "{{total}}人中任意の{{threshold}}人",
+      "recommended": "推奨",
+      "warningLowThreshold": "セキュリティが低い：一人で秘密を復元できます。",
+      "warningHighThreshold": "リスクあり：誰かがドキュメントを紛失すると、復元が不可能になります。",
+      "protectionInfo": "{{count}}人の守護者がドキュメントを紛失しても保護されます。"
+    },
+    "step4": {
+      "title": "守護者へのメッセージ",
+      "description": "各守護者のドキュメントに表示される個人的なメッセージを書いてください。",
+      "messageLabel": "守護者へのメッセージ",
+      "messagePlaceholder": "これが何のためで、いつ使うべきかを説明するメッセージを守護者に書いてください...",
+      "useTemplate": "提案テンプレートを使用",
+      "template": "親愛なる守護者へ、\n\nあなたを深く信頼しているからこそ、これをお送りしています。このドキュメントには私の{{secretType}}の一部が含まれています。\n\n秘密を復元する必要がある場合は、連絡します。このドキュメントを安全かつプライベートに保管してください。\n\n私に何かあり、他の人が秘密を復元する必要がある場合、彼らがあなたに連絡します。少なくとも{{threshold}}人の他の守護者とあなたの断片を共有する必要があります。\n\n信頼できる人でいてくれてありがとうございます。\n\n{{ownerName}}"
+    },
+    "step5": {
+      "title": "確認と生成",
+      "description": "守護者ドキュメントを生成する前に設定を確認してください。",
+      "ownerSection": "あなたの情報",
+      "secretSection": "秘密",
+      "secretType": "種類",
+      "secretLength": "{{count}}文字",
+      "keepersSection": "守護者",
+      "recoverySection": "復元設定",
+      "recoveryDescription": "{{total}}人中任意の{{threshold}}人の守護者が秘密を復元できます",
+      "generateButton": "ドキュメントを生成"
+    },
+    "step6": {
+      "title": "ドキュメント準備完了",
+      "description": "守護者ドキュメントが生成されました。ダウンロードして安全に配布してください。",
+      "keeperDocument": "{{name}}のドキュメント",
+      "downloadPDF": "PDFをダウンロード",
+      "downloadAllZip": "すべてをZIPでダウンロード",
+      "distributionTips": "配布のヒント",
+      "tip1": "安全なチャネル（Signal、暗号化メール）でドキュメントを送信",
+      "tip2": "印刷して物理的なコピーを手渡すことを検討",
+      "tip3": "守護者がドキュメントを安全に保管することを確認",
+      "tip4": "この設定に依存する前に復元をテスト"
+    },
+    "step7": {
+      "title": "設定を検証",
+      "description": "{{threshold}}個の守護者の断片を選択して、秘密が復元できることをテストしてください。",
+      "selectPieces": "復元をテストするために{{threshold}}個の断片を選択:",
+      "pieceButton": "{{name}}の断片",
+      "testRecovery": "復元をテスト",
+      "selectMore": "あと{{count}}個選択してください",
+      "recoverySuccess": "復元成功",
+      "recoverySuccessDesc": "{{count}}個の断片で秘密を復元できます",
+      "recoveredSecret": "復元された秘密が一致しました！",
+      "setupComplete": "設定完了",
+      "setupCompleteDesc": "守護者ドキュメントの準備ができました。安全に配布することを忘れないでください。",
+      "keeperDocs": "守護者ドキュメント",
+      "recoveryThreshold": "復元しきい値",
+      "securityReminder": "セキュリティリマインダー",
+      "securityReminderDesc": "秘密の安全性は、それを保持する人々の信頼性に依存します。守護者を賢く選び、状況が変わったら設定を更新してください。"
+    }
+  },
+  "recover": {
+    "title": "秘密を復元",
+    "description": "複数の守護者からの断片が必要です。詳細は守護者ドキュメントを確認してください。",
+    "collectedPieces": "収集した断片:",
+    "piece": "断片",
+    "pieceNumber": "断片 {{number}}",
+    "addFirstPiece": "最初の断片を追加:",
+    "addAnotherPiece": "別の断片を追加:",
+    "inputPlaceholder": "ドキュメントからコードを貼り付けるか入力",
+    "or": "または",
+    "scanQR": "QRコードをスキャン",
+    "needMorePieces": "あと{{count}}個必要",
+    "recoverSecret": "秘密を復元",
+    "errors": {
+      "duplicate": "この断片は既に追加されています。",
+      "invalidFormat": "断片の形式が無効です。確認して再試行してください。",
+      "needAtLeast2": "復元には少なくとも2つの断片が必要です。",
+      "recoveryFailed": "秘密を復元できませんでした。断片が一致しないか、無効な可能性があります。",
+      "piecesMismatch": "これらの断片は一致しないようです。断片が間違って入力されたか、異なる秘密からのものである可能性があります。"
+    },
+    "success": {
+      "title": "秘密を復元しました！",
+      "description": "{{count}}個の断片が正常に結合されました",
+      "warning": "このページを離れると秘密は消えます。必ずコピーして安全に保存してください。"
+    },
+    "help": "ヘルプが必要ですか？守護者ドキュメントで手順と他の守護者の連絡先を確認してください。"
+  },
+  "qrScanner": {
+    "title": "QRコードをスキャン",
+    "instruction": "守護者のQRコードにカメラを向けてください",
+    "manualEntry": "コードを手動で入力",
+    "cameraError": "カメラにアクセスできませんでした",
+    "cameraErrorDesc": "カメラへのアクセスを許可するか、コードを手動で入力してください。"
+  },
+  "pdf": {
+    "title": "守護者ドキュメント",
+    "subtitle": "秘密復元ドキュメント",
+    "confidential": "機密",
+    "forKeeper": "宛先: {{name}}",
+    "createdBy": "作成者: {{name}}",
+    "date": "日付: {{date}}",
+    "contactInfo": "連絡先: {{contact}}",
+    "protects": "保護対象: {{type}}",
+    "accountName": "アカウント/サービス: {{name}}",
+    "serviceUrl": "サービスURL: {{url}}",
+    "recoveryRequires": "復元に必要: {{total}}人中任意の{{threshold}}人の守護者",
+    "whenToUse": "このドキュメントを使用するとき",
+    "whenToUseDesc": "このドキュメントには秘密の断片が含まれています。以下の場合に使用が必要になる可能性があります:",
+    "useCase1": "所有者が秘密の復元を依頼した場合",
+    "useCase2": "所有者に何かあり、許可された関係者がアクセスを必要とする場合",
+    "ifOwnerAsks": "{{name}}が助けを求めた場合:",
+    "ifOwnerAsksDesc": "アクセスを失い、あなたの断片が必要な可能性があります。下のコードを読み上げるか、neeraj-pilot.github.io/keepers/recoverで入力を手伝ってください",
+    "ifOwnerUnavailable": "{{name}}が連絡不能または亡くなった場合:",
+    "ifOwnerUnavailableDesc": "下記の他の守護者に連絡してください。一緒に（{{threshold}}人中任意の人数で）家族のために秘密を復元できます。",
+    "messageSection": "{{name}}からのメッセージ",
+    "yourPiece": "あなたの秘密の断片",
+    "pieceInstruction": "これはあなた固有の断片です。安全かつプライベートに保管してください。",
+    "scanOrType": "このコードを入力:",
+    "otherKeepers": "他の守護者",
+    "otherKeepersDesc": "復元を調整するためにこれらの人々に連絡してください:",
+    "theirCopy": "彼らのコピー: {{location}}",
+    "storedAt": "ドキュメントの保管場所:",
+    "ownerContact": "所有者の連絡先",
+    "howToRecover": "復元方法",
+    "recoverStep1": "1. neeraj-pilot.github.io/keepers/recoverにアクセス",
+    "recoverStep2": "2. あなたの断片をスキャンまたは入力（上記）",
+    "recoverStep3": "3. 別の守護者に断片を追加してもらう",
+    "recoverStep4": "4. 秘密が明らかになります",
+    "ifSiteUnavailable": "サイトが利用できない場合:",
+    "ifSiteUnavailableDesc": "これは標準のShamir秘密分散法を使用しています。互換性のあるツールで断片を結合できます。",
+    "footer": "このドキュメントを安全な場所に保管してください。復元目的以外では共有しないでください。"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "pt": "Português",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}
