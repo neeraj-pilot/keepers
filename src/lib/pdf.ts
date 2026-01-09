@@ -398,7 +398,7 @@ export function generateOwnerPDF(shares: GeneratedShares): jsPDF {
 
   const howToRecover = [
     `1. Contact any ${shares.config.threshold} keepers above`,
-    '2. Go to keepers.io/recover together',
+    '2. Go to neeraj-pilot.github.io/keepers/recover together',
     '3. Each person enters their piece',
     '4. Your secret is restored',
   ];
